@@ -30,20 +30,22 @@ export function Navigation({ activeSection, handleLogoClick, konamiProgress }: N
           </div>
         )}
 
-        <div className="hidden md:flex items-center gap-6">
-          {NAV_ITEMS.map((item) => {
-            const isActive = activeSection === item.href.slice(1);
-            return (
-              <a key={item.key} href={item.href} className="font-mono text-xs tracking-wider transition-all duration-200 hover:opacity-100 uppercase" style={{ color: isActive ? "#00E5FF" : "#64748B" }}>
-                {isActive && <span style={{ color: "#FF003C" }}>{">"} </span>}
-                {t(item.key)}
-              </a>
-            );
-          })}
+        <div className="flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-6">
+            {NAV_ITEMS.map((item) => {
+              const isActive = activeSection === item.href.slice(1);
+              return (
+                <a key={item.key} href={item.href} className="font-mono text-xs tracking-wider transition-all duration-200 hover:opacity-100 uppercase" style={{ color: isActive ? "#00E5FF" : "#64748B" }}>
+                  {isActive && <span style={{ color: "#FF003C" }}>{">"} </span>}
+                  {t(item.key)}
+                </a>
+              );
+            })}
+          </div>
           
           <button 
             onClick={toggleLanguage}
-            className="ml-4 px-2 py-1 rounded text-xs font-mono font-bold transition-colors uppercase"
+            className="px-2 py-1 rounded text-xs font-mono font-bold transition-colors uppercase"
             style={{ 
               background: "rgba(0, 229, 255, 0.1)", 
               color: "#00E5FF", 

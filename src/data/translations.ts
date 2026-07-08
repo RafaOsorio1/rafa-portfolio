@@ -110,13 +110,17 @@ export const translations = {
         desc: "Plataforma de comercio electrónico moderna y completa.",
         long: "E-commerce full-stack desarrollado con React 19 y Node.js. Incluye carrito de compras, gestión de estado con Zustand, base de datos PostgreSQL gestionada con Prisma, y websockets para notificaciones en tiempo real."
       },
-      chappy: {
+      chatty: {
         desc: "Aplicación de mensajería instantánea en tiempo real.",
         long: "Plataforma de chat construida con React y Socket.io. Soporta salas de chat, selectores de emojis y comunicación bidireccional de baja latencia con un backend escalable en Node.js."
       },
       feedback: {
         desc: "Plataforma integral de feedback en colaboración con Angie Natalia.",
         long: "Aplicación full-stack desarrollada en colaboración con Angie Natalia (líder del proyecto). Me enfoqué en la arquitectura del backend, base de datos (PostgreSQL + Prisma) y apoyé en algunas implementaciones clave del frontend en Next.js."
+      },
+      f1_hub: {
+        desc: "Plataforma de estadísticas y telemetría de Fórmula 1.",
+        long: "Aplicación interactiva que consume la API de Jolpica para mostrar resultados en tiempo real, estadísticas de pilotos y análisis de carreras. Construida con un backend robusto para manejar la sincronización de datos."
       }
     }
   },
@@ -231,13 +235,17 @@ export const translations = {
         desc: "Modern and comprehensive e-commerce platform.",
         long: "Full-stack e-commerce built with React 19 and Node.js. Includes a shopping cart, state management with Zustand, a PostgreSQL database managed with Prisma, and websockets for real-time notifications."
       },
-      chappy: {
+      chatty: {
         desc: "Real-time instant messaging application.",
         long: "Chat platform built with React and Socket.io. Supports chat rooms, emoji pickers, and low-latency bidirectional communication with a scalable Node.js backend."
       },
       feedback: {
         desc: "Comprehensive feedback platform in collaboration with Angie Natalia.",
         long: "Full-stack application developed in collaboration with Angie Natalia (project lead). I focused on the backend architecture, database (PostgreSQL + Prisma), and supported key frontend implementations in Next.js."
+      },
+      f1_hub: {
+        desc: "Formula 1 statistics and telemetry platform.",
+        long: "Interactive application that consumes the Jolpica API to display real-time results, driver statistics, and race analysis. Built with a robust backend to handle data synchronization."
       }
     }
   }

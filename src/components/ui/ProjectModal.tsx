@@ -61,19 +61,40 @@ export function ProjectModal({ project, onClose }: { project: typeof PROJECTS[0]
               ))}
             </div>
           </div>
-          <div className="flex gap-3 pt-1">
+          <div className="flex flex-wrap gap-3 pt-1">
             <a href={project.url} target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-2 px-5 py-2.5 rounded text-sm font-mono font-bold transition-opacity hover:opacity-85"
               style={{ background: project.accent, color: "#06060E" }}
             >
-              <Globe size={13} /> Ver demo
+              <Globe size={13} /> Demo
             </a>
-            <a href={project.repo} target="_blank" rel="noopener noreferrer"
-              className="flex items-center gap-2 px-5 py-2.5 rounded text-sm font-mono transition-opacity hover:opacity-70"
-              style={{ border: `1px solid ${project.accent}40`, color: project.accent }}
-            >
-              <Github size={13} /> Código
-            </a>
+
+            {"demoBack" in project && project.demoBack && (
+              <a href={project.demoBack as string} target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-2 px-5 py-2.5 rounded text-sm font-mono transition-opacity hover:opacity-70"
+                style={{ border: `1px solid ${project.accent}40`, color: project.accent }}
+              >
+                <Globe size={13} /> API Docs
+              </a>
+            )}
+            
+            {project.repo && (
+              <a href={project.repo} target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-2 px-5 py-2.5 rounded text-sm font-mono transition-opacity hover:opacity-70"
+                style={{ border: `1px solid ${project.accent}40`, color: project.accent }}
+              >
+                <Github size={13} /> {!("repoBack" in project) || !project.repoBack ? "Código" : "Frontend"}
+              </a>
+            )}
+
+            {"repoBack" in project && project.repoBack && (
+              <a href={project.repoBack as string} target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-2 px-5 py-2.5 rounded text-sm font-mono transition-opacity hover:opacity-70"
+                style={{ border: `1px solid ${project.accent}40`, color: project.accent }}
+              >
+                <Github size={13} /> Backend
+              </a>
+            )}
           </div>
         </div>
       </div>

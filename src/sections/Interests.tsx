@@ -5,6 +5,7 @@ import { Star } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 
 function F1Tab() {
+  const { t } = useLanguage();
   const [standings, setStandings] = useState(F1_STANDINGS);
   const [loading, setLoading] = useState(true);
 
@@ -53,23 +54,23 @@ function F1Tab() {
   return (
     <div className="space-y-5">
       <div className="flex flex-wrap items-center gap-3">
-        <span className="text-xs font-mono" style={{ color: "#64748B" }}>Team favorito:</span>
+        <span className="text-xs font-mono" style={{ color: "#64748B" }}>{t('interests_section.f1.team') || "Team favorito:"}</span>
         <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-full" style={{ background: "#9CA3AF22", color: "#9CA3AF", border: "1px solid #9CA3AF40" }}>Cadillac 🛡️</span>
-        <span className="text-xs font-mono" style={{ color: "#64748B" }}>Piloto favorito:</span>
+        <span className="text-xs font-mono" style={{ color: "#64748B" }}>{t('interests_section.f1.driver') || "Piloto favorito:"}</span>
         <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-full" style={{ background: "#10B98122", color: "#10B981", border: "1px solid #10B98140" }}>Checo Pérez #11</span>
       </div>
       <div className="rounded-xl overflow-hidden relative" style={{ border: "1px solid rgba(0,229,255,0.12)" }}>
         <div className="px-5 py-2.5 flex items-center justify-between" style={{ background: "rgba(0,229,255,0.04)", borderBottom: "1px solid rgba(0,229,255,0.08)" }}>
-          <span className="text-xs font-mono uppercase tracking-widest" style={{ color: "#64748B" }}>Clasificación Pilotos 2026</span>
+          <span className="text-xs font-mono uppercase tracking-widest" style={{ color: "#64748B" }}>{t('interests_section.f1.title') || "Clasificación Pilotos 2026"}</span>
           <div className="flex items-center gap-2">
             <div className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: loading ? "#FFD700" : "#00FF80" }} />
-            <span className="text-[10px] font-mono" style={{ color: "#64748B" }}>{loading ? "syncing..." : "live via jolpica-f1"}</span>
+            <span className="text-[10px] font-mono" style={{ color: "#64748B" }}>{loading ? (t('interests_section.f1.syncing') || "syncing...") : (t('interests_section.f1.live') || "live via jolpica-f1")}</span>
           </div>
         </div>
         <div className="relative">
           {loading && (
             <div className="absolute inset-0 z-10 flex items-center justify-center backdrop-blur-[2px]" style={{ background: "rgba(12,12,26,0.4)" }}>
-              <span className="text-xs font-mono text-[#00E5FF] animate-pulse">Cargando telemetría...</span>
+              <span className="text-xs font-mono text-[#00E5FF] animate-pulse">{t('interests_section.f1.loading') || "Cargando telemetría..."}</span>
             </div>
           )}
           {standings.map((row: any) => (
@@ -80,7 +81,7 @@ function F1Tab() {
                 <div className="text-sm font-semibold flex items-center gap-2 flex-wrap">
                   <span>{row.flag} {row.driver}</span>
                   {row.driver === "Sergio Pérez" && (
-                    <span className="text-xs px-1.5 py-0.5 rounded font-mono" style={{ background: "#10B98122", color: "#10B981", border: "1px solid #10B98140" }}>⭐ fav</span>
+                    <span className="text-xs px-1.5 py-0.5 rounded font-mono" style={{ background: "#10B98122", color: "#10B981", border: "1px solid #10B98140" }}>{t('interests_section.f1.fav') || "⭐ fav"}</span>
                   )}
                 </div>
                 <div className="text-xs font-mono mt-0.5" style={{ color: "#64748B" }}>{row.team}</div>

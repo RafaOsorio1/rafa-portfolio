@@ -41,7 +41,7 @@ export function Hero() {
           background: "rgba(0,229,255,0.06)",
         }}>
           <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-          sistema_online · v2.0.{new Date().getFullYear()}
+          {t('hero.badge') || "sistema_online"} · v2.0.{new Date().getFullYear()}
         </div>
 
         <div>
@@ -65,10 +65,10 @@ export function Hero() {
         </p>
         <div className="flex items-center justify-center gap-3 flex-wrap">
           <a href="#projects" className="px-6 py-2.5 rounded font-mono text-sm font-bold transition-all hover:opacity-90 hover:scale-[1.03]" style={{ background: "#00E5FF", color: "#06060E" }}>
-            ver_proyectos()
+            {t('hero.btn_projects') || "ver_proyectos()"}
           </a>
           <a href="#contact" className="px-6 py-2.5 rounded font-mono text-sm font-bold transition-all hover:opacity-70" style={{ border: "1px solid rgba(0,229,255,0.35)", color: "#00E5FF" }}>
-            contactar()
+            {t('hero.btn_contact') || "contactar()"}
           </a>
         </div>
 

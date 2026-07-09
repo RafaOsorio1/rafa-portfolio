@@ -1,9 +1,10 @@
 import { SectionLabel } from "../components/ui/SectionLabel";
-import { SKILLS_DATA } from "../data/constants";
+import { getSkills } from "../data/constants";
 import { useLanguage } from "../context/LanguageContext";
 
 export function Skills() {
   const { t } = useLanguage();
+  const SKILLS_DATA = getSkills(t);
 
   return (
     <section id="skills" className="py-28 px-6">

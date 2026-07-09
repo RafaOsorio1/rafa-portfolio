@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { SectionLabel } from "../components/ui/SectionLabel";
 import { F1_STANDINGS, TEAM_COLORS, GAMES, MOVIES } from "../data/constants";
 import { Star } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 function F1Tab() {
   const [standings, setStandings] = useState(F1_STANDINGS);
@@ -149,27 +150,28 @@ function MoviesTab() {
 }
 
 function PetsTab({ activePet, petBubble, onPetClick }: { activePet: string | null; petBubble: string | null; onPetClick: (key: string) => void }) {
+  const { t } = useLanguage();
   const pets = [
     {
-      key: "dog", name: "Roxy", emoji: "🐕", type: "Perrita",
-      desc: "La guardiana de la casa. Energía infinita, amor incondicional. Fan del balón y de los paseos interminables.",
+      key: "dog", name: "Roxy", emoji: "🐕", type: t('interests_section.pets_data.roxy.type') || "Perrita",
+      desc: t('interests_section.pets_data.roxy.desc') || "La guardiana de la casa. Energía infinita, amor incondicional. Fan del balón y de los paseos interminables.",
       img: "https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=500&h=500&fit=crop&auto=format",
       color: "#FF6B35",
-      fact: "Duerme en tu cama y ni siquiera te pide permiso",
+      fact: t('interests_section.pets_data.roxy.fact') || "Duerme en tu cama y ni siquiera te pide permiso",
     },
     {
-      key: "cat1", name: "Nova", emoji: "🐱", type: "Gata",
-      desc: "La reina del hogar. Experta en interrumpir videollamadas y sentarse justo encima del teclado.",
+      key: "cat1", name: "Nova", emoji: "🐱", type: t('interests_section.pets_data.nova.type') || "Gata",
+      desc: t('interests_section.pets_data.nova.desc') || "La reina del hogar. Experta en interrumpir videollamadas y sentarse justo encima del teclado.",
       img: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=500&h=500&fit=crop&auto=format",
       color: "#FFD700",
-      fact: "Sabe exactamente cuándo abres una bolsa de snacks",
+      fact: t('interests_section.pets_data.nova.fact') || "Sabe exactamente cuándo abres una bolsa de snacks",
     },
     {
-      key: "cat2", name: "Sooky", emoji: "🐱", type: "Gata",
-      desc: "La traviesa oficial. Especialista en tirar cosas de las mesas y pedir comida a las 3am.",
+      key: "cat2", name: "Sooky", emoji: "🐱", type: t('interests_section.pets_data.sooky.type') || "Gata",
+      desc: t('interests_section.pets_data.sooky.desc') || "La traviesa oficial. Especialista en tirar cosas de las mesas y pedir comida a las 3am.",
       img: "https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=500&h=500&fit=crop&auto=format",
       color: "#C084FC",
-      fact: "Ha destruido exactamente 3 pares de auriculares",
+      fact: t('interests_section.pets_data.sooky.fact') || "Ha destruido exactamente 3 pares de auriculares",
     },
   ];
 
@@ -204,7 +206,7 @@ function PetsTab({ activePet, petBubble, onPetClick }: { activePet: string | nul
             <div className="text-xs font-mono p-2 rounded" style={{ background: pet.color + "12", color: pet.color + "CC" }}>
               💡 {pet.fact}
             </div>
-            <div className="text-xs font-mono text-center pt-1" style={{ color: pet.color + "66" }}>[ click para saludar ]</div>
+            <div className="text-xs font-mono text-center pt-1" style={{ color: pet.color + "66" }}>{t('interests_section.pets_data.click') || "[ click para saludar ]"}</div>
           </div>
         </button>
       ))}
@@ -219,20 +221,21 @@ interface InterestsProps {
 }
 
 export function Interests({ activePet, petBubble, handlePetClick }: InterestsProps) {
+  const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState<"f1" | "games" | "movies" | "pets">("f1");
 
   return (
     <section id="interests" className="py-28 px-6">
       <div className="max-w-6xl mx-auto">
-        <SectionLabel text="intereses" />
-        <h2 className="mt-4 text-3xl font-black" style={{ fontFamily: "'Exo 2', sans-serif" }}>Fuera del código</h2>
+        <SectionLabel text={t('interests_section.label') || "intereses"} />
+        <h2 className="mt-4 text-3xl font-black" style={{ fontFamily: "'Exo 2', sans-serif" }}>{t('interests_section.title') || "Fuera del código"}</h2>
 
         <div className="mt-8 flex gap-2 flex-wrap">
           {([
-            { key: "f1", label: "🏎️  F1", color: "#FF003C" },
-            { key: "games", label: "🎮  Juegos", color: "#7C3AED" },
-            { key: "movies", label: "🎬  Películas", color: "#00E5FF" },
-            { key: "pets", label: "🐾  Mascotas", color: "#FF6B35" },
+            { key: "f1", label: `🏎️  ${t('interests_section.tabs.f1') || "Fórmula 1"}`, color: "#FF003C" },
+            { key: "games", label: `🎮  ${t('interests_section.tabs.gaming') || "Juegos"}`, color: "#7C3AED" },
+            { key: "movies", label: `🎬  ${t('interests_section.tabs.cinema') || "Películas"}`, color: "#00E5FF" },
+            { key: "pets", label: `🐾  ${t('interests_section.tabs.pets') || "Mascotas"}`, color: "#FF6B35" },
           ] as const).map((tab) => {
             const isActive = activeTab === tab.key;
             return (

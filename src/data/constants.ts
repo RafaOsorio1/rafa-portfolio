@@ -60,8 +60,8 @@ export const getProjects = (t: (key: string) => string) => [
   }
 ];
 
-export const SKILLS_DATA = [
-  { category: "Frontend", items: [
+export const getSkills = (t: (key: string) => string) => [
+  { category: t('skills.categories.frontend') || "Frontend", items: [
     { name: "React 19", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
     { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" },
     { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
@@ -69,7 +69,7 @@ export const SKILLS_DATA = [
     { name: "React Query", icon: "" },
     { name: "Vite", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" }
   ], level: 95, color: "#00E5FF" },
-  { category: "Backend", items: [
+  { category: t('skills.categories.backend') || "Backend", items: [
     { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
     { name: "Express", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" },
     { name: "Socket.io", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg" },
@@ -77,13 +77,13 @@ export const SKILLS_DATA = [
     { name: "Zod", icon: "" },
     { name: "Bcrypt", icon: "" }
   ], level: 90, color: "#FF003C" },
-  { category: "Bases de Datos", items: [
+  { category: t('skills.categories.databases') || "Bases de Datos", items: [
     { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
     { name: "Prisma ORM", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" },
     { name: "Redis", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" },
     { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" }
   ], level: 85, color: "#FFD700" },
-  { category: "Herramientas / Infra", items: [
+  { category: t('skills.categories.tools') || "Herramientas / Infra", items: [
     { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
     { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
     { name: "Cloudinary", icon: "" },

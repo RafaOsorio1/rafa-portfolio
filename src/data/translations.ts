@@ -71,7 +71,13 @@ export const translations = {
     },
     skills: {
       label: "herramientas",
-      title: "Mi stack tecnológico."
+      title: "Mi stack tecnológico.",
+      categories: {
+        frontend: "Frontend",
+        backend: "Backend",
+        databases: "Bases de datos",
+        tools: "Herramientas / Infra"
+      }
     },
     interests_section: {
       label: "intereses",
@@ -96,6 +102,12 @@ export const translations = {
       },
       games: {
         title: "Juegos Top"
+      },
+      pets_data: {
+        roxy: { type: "Perrita", desc: "La guardiana de la casa. Energía infinita, amor incondicional. Fan del balón y de los paseos interminables.", fact: "Duerme en tu cama y ni siquiera te pide permiso" },
+        nova: { type: "Gata", desc: "La reina del hogar. Experta en interrumpir videollamadas y sentarse justo encima del teclado.", fact: "Sabe exactamente cuándo abres una bolsa de snacks" },
+        sooky: { type: "Gata", desc: "La traviesa oficial. Especialista en tirar cosas de las mesas y pedir comida a las 3am.", fact: "Ha destruido exactamente 3 pares de auriculares" },
+        click: "[ click para saludar ]"
       }
     },
     contact: {
@@ -114,9 +126,17 @@ export const translations = {
         desc: "Aplicación de mensajería instantánea en tiempo real.",
         long: "Plataforma de chat construida con React y Socket.io. Soporta salas de chat, selectores de emojis y comunicación bidireccional de baja latencia con un backend escalable en Node.js."
       },
+      chatty_api: {
+        desc: "API REST y WebSocket para plataforma de mensajería.",
+        long: "Backend de la plataforma Chatty. Arquitectura escalable en Node.js que maneja la persistencia de usuarios, seguridad JWT y comunicación bidireccional de baja latencia con Socket.io. Documentado con Swagger."
+      },
       feedback: {
         desc: "Plataforma integral de feedback en colaboración con Angie Natalia.",
         long: "Aplicación full-stack desarrollada en colaboración con Angie Natalia (líder del proyecto). Me enfoqué en la arquitectura del backend, base de datos (PostgreSQL + Prisma) y apoyé en algunas implementaciones clave del frontend en Next.js."
+      },
+      feedback_api: {
+        desc: "Backend robusto para plataforma de feedback corporativo.",
+        long: "Arquitectura backend completa desarrollada desde cero. Gestión compleja de base de datos relacional (PostgreSQL + Prisma), autenticación segura y múltiples endpoints REST documentados interactivamente con Swagger."
       },
       f1_hub: {
         desc: "Plataforma de estadísticas y telemetría de Fórmula 1.",
@@ -196,7 +216,13 @@ export const translations = {
     },
     skills: {
       label: "skills",
-      title: "My tech stack."
+      title: "My tech stack.",
+      categories: {
+        frontend: "Frontend",
+        backend: "Backend",
+        databases: "Databases",
+        tools: "Tools / Infra"
+      }
     },
     interests_section: {
       label: "interests",
@@ -221,6 +247,12 @@ export const translations = {
       },
       games: {
         title: "Top Games"
+      },
+      pets_data: {
+        roxy: { type: "Dog", desc: "The guardian of the house. Infinite energy, unconditional love. Fan of balls and endless walks.", fact: "Sleeps in your bed and doesn't even ask for permission" },
+        nova: { type: "Cat", desc: "The queen of the home. Expert in interrupting video calls and sitting right on the keyboard.", fact: "Knows exactly when you open a bag of snacks" },
+        sooky: { type: "Cat", desc: "The official troublemaker. Specialist in knocking things off tables and begging for food at 3am.", fact: "Has destroyed exactly 3 pairs of headphones" },
+        click: "[ click to say hi ]"
       }
     },
     contact: {
@@ -239,9 +271,17 @@ export const translations = {
         desc: "Real-time instant messaging application.",
         long: "Chat platform built with React and Socket.io. Supports chat rooms, emoji pickers, and low-latency bidirectional communication with a scalable Node.js backend."
       },
+      chatty_api: {
+        desc: "REST API and WebSocket for messaging platform.",
+        long: "Backend for the Chatty platform. Scalable Node.js architecture handling user persistence, JWT security, and low-latency bidirectional communication with Socket.io. Documented with Swagger."
+      },
       feedback: {
         desc: "Comprehensive feedback platform in collaboration with Angie Natalia.",
         long: "Full-stack application developed in collaboration with Angie Natalia (project lead). I focused on the backend architecture, database (PostgreSQL + Prisma), and supported key frontend implementations in Next.js."
+      },
+      feedback_api: {
+        desc: "Robust backend for corporate feedback platform.",
+        long: "Complete backend architecture developed from scratch. Complex relational database management (PostgreSQL + Prisma), secure authentication, and multiple REST endpoints interactively documented with Swagger."
       },
       f1_hub: {
         desc: "Formula 1 statistics and telemetry platform.",

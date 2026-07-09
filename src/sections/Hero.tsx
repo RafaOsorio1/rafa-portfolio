@@ -76,7 +76,7 @@ export function Hero() {
           {([
             { icon: Github, href: "https://github.com/RafaOsorio1", label: "GitHub" },
             { icon: Linkedin, href: "https://www.linkedin.com/in/rafael-rodelo-osorio-90b605262/", label: "LinkedIn" },
-            { icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=rafaosorio.0815@gmail.com", label: "Email" },
+            { icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=hi@rafaosorio.dev", label: "Email" },
           ] as const).map(({ icon: Icon, href, label }) => (
             <a key={label} href={href} target="_blank" rel="noopener noreferrer"
               className="p-2.5 rounded-lg transition-all duration-200 hover:scale-110 hover:border-[rgba(0,229,255,0.4)]"

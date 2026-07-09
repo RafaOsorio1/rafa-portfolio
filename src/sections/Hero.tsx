@@ -75,7 +75,7 @@ export function Hero() {
         <div className="flex items-center justify-center gap-3">
           {([
             { icon: Github, href: "https://github.com/RafaOsorio1", label: "GitHub" },
-            { icon: Linkedin, href: "https://www.linkedin.com/in/rafael-rodelo-osorio-90b605262/", label: "LinkedIn" },
+            { icon: Linkedin, href: "https://www.linkedin.com/in/rafaosoriodev", label: "LinkedIn" },
             { icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=hi@rafaosorio.dev", label: "Email" },
           ] as const).map(({ icon: Icon, href, label }) => (
             <a key={label} href={href} target="_blank" rel="noopener noreferrer"

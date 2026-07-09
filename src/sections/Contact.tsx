@@ -26,7 +26,7 @@ export function Contact() {
             </div>
             <div className="pl-4 space-y-2" style={{ color: "#64748B" }}>
               <div>→ <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hi@rafaosorio.dev" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors" style={{ color: "#00E5FF" }}>hi@rafaosorio.dev</a></div>
-              <div>→ <a href="https://www.linkedin.com/in/rafael-rodelo-osorio-90b605262/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors" style={{ color: "#00E5FF" }}>linkedin.com/in/rafael-rodelo</a></div>
+              <div>→ <a href="https://www.linkedin.com/in/rafaosoriodev" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors" style={{ color: "#00E5FF" }}>linkedin.com/in/rafaosoriodev</a></div>
               <div>→ <a href="https://github.com/RafaOsorio1" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors" style={{ color: "#00E5FF" }}>github.com/RafaOsorio1</a></div>
             </div>
             <div className="flex gap-3 flex-wrap pt-2">

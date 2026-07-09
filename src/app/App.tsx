@@ -95,9 +95,24 @@ export default function App() {
 
   const handlePetClick = (key: string) => {
     const msgs: Record<string, string[]> = {
-      dog: ["¡Woof! 🐕", "¡Ruf ruf!", "¡Juguemos! 🎾", "*mueve la cola frenéticamente*"],
-      cat1: ["...miau", "*te ignora olímpicamente*", "Mrrrow 🐱", "*ronronea y te da palmadas*"],
-      cat2: ["Nyaa~", "*bosteza con drama*", "Miau. 😤", "*tira algo de la mesa para llamar tu atención*"],
+      dog: [
+        t('interests_section.pets_data.roxy.b1') || "¡Woof! 🐕", 
+        t('interests_section.pets_data.roxy.b2') || "¡Ruf ruf!", 
+        t('interests_section.pets_data.roxy.b3') || "¡Juguemos! 🎾", 
+        t('interests_section.pets_data.roxy.b4') || "*mueve la cola frenéticamente*"
+      ],
+      cat1: [
+        t('interests_section.pets_data.nova.b1') || "...miau", 
+        t('interests_section.pets_data.nova.b2') || "*te ignora olímpicamente*", 
+        t('interests_section.pets_data.nova.b3') || "Mrrrow 🐱", 
+        t('interests_section.pets_data.nova.b4') || "*ronronea y te da palmadas*"
+      ],
+      cat2: [
+        t('interests_section.pets_data.sooky.b1') || "Nyaa~", 
+        t('interests_section.pets_data.sooky.b2') || "*bosteza con drama*", 
+        t('interests_section.pets_data.sooky.b3') || "Miau. 😤", 
+        t('interests_section.pets_data.sooky.b4') || "*tira algo de la mesa para llamar tu atención*"
+      ],
     };
     const list = msgs[key] || ["..."];
     setActivePet(key);

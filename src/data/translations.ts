@@ -107,9 +107,18 @@ export const translations = {
         title: "Juegos Top"
       },
       pets_data: {
-        roxy: { type: "Perrita", desc: "La guardiana de la casa. Energía infinita, amor incondicional. Fan del balón y de los paseos interminables.", fact: "Duerme en tu cama y ni siquiera te pide permiso" },
-        nova: { type: "Gata", desc: "La reina del hogar. Experta en interrumpir videollamadas y sentarse justo encima del teclado.", fact: "Sabe exactamente cuándo abres una bolsa de snacks" },
-        sooky: { type: "Gata", desc: "La traviesa oficial. Especialista en tirar cosas de las mesas y pedir comida a las 3am.", fact: "Ha destruido exactamente 3 pares de auriculares" },
+        roxy: { 
+          type: "Perrita", desc: "La guardiana de la casa. Energía infinita, amor incondicional. Fan del balón y de los paseos interminables.", fact: "Duerme en tu cama y ni siquiera te pide permiso",
+          b1: "¡Woof! 🐕", b2: "¡Ruf ruf!", b3: "¡Juguemos! 🎾", b4: "*mueve la cola frenéticamente*"
+        },
+        nova: { 
+          type: "Gata", desc: "La reina del hogar. Experta en interrumpir videollamadas y sentarse justo encima del teclado.", fact: "Sabe exactamente cuándo abres una bolsa de snacks",
+          b1: "...miau", b2: "*te ignora olímpicamente*", b3: "Mrrrow 🐱", b4: "*ronronea y te da palmadas*"
+        },
+        sooky: { 
+          type: "Gata", desc: "La traviesa oficial. Especialista en tirar cosas de las mesas y pedir comida a las 3am.", fact: "Ha destruido exactamente 3 pares de auriculares",
+          b1: "Nyaa~", b2: "*bosteza con drama*", b3: "Miau. 😤", b4: "*tira algo de la mesa para llamar tu atención*"
+        },
         click: "[ click para saludar ]"
       }
     },
@@ -255,9 +264,18 @@ export const translations = {
         title: "Top Games"
       },
       pets_data: {
-        roxy: { type: "Dog", desc: "The guardian of the house. Infinite energy, unconditional love. Fan of balls and endless walks.", fact: "Sleeps in your bed and doesn't even ask for permission" },
-        nova: { type: "Cat", desc: "The queen of the home. Expert in interrupting video calls and sitting right on the keyboard.", fact: "Knows exactly when you open a bag of snacks" },
-        sooky: { type: "Cat", desc: "The official troublemaker. Specialist in knocking things off tables and begging for food at 3am.", fact: "Has destroyed exactly 3 pairs of headphones" },
+        roxy: { 
+          type: "Dog", desc: "The guardian of the house. Infinite energy, unconditional love. Fan of balls and endless walks.", fact: "Sleeps in your bed and doesn't even ask for permission",
+          b1: "Woof! 🐕", b2: "Ruff ruff!", b3: "Let's play! 🎾", b4: "*wags tail frantically*"
+        },
+        nova: { 
+          type: "Cat", desc: "The queen of the home. Expert in interrupting video calls and sitting right on the keyboard.", fact: "Knows exactly when you open a bag of snacks",
+          b1: "...meow", b2: "*ignores you completely*", b3: "Mrrrow 🐱", b4: "*purrs and pats you*"
+        },
+        sooky: { 
+          type: "Cat", desc: "The official troublemaker. Specialist in knocking things off tables and begging for food at 3am.", fact: "Has destroyed exactly 3 pairs of headphones",
+          b1: "Nyaa~", b2: "*yawns dramatically*", b3: "Meow. 😤", b4: "*knocks something off the table to get your attention*"
+        },
         click: "[ click to say hi ]"
       }
     },

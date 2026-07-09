@@ -23,7 +23,7 @@ export const getProjects = (t: (key: string) => string) => [
     longDesc: t('projects_data.chatty.long') || "Plataforma de chat construida con React y Socket.io. Soporta salas de chat, selectores de emojis y comunicación bidireccional de baja latencia.",
     tech: ["React", "Socket.io", "Tailwind CSS", "Zustand"],
     url: "https://chatty.rafaosorio.dev/", repo: "https://github.com/RafaOsorio1/chatty-client", accent: "#FF003C", year: "2026", status: "production",
-    img: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=450&fit=crop&auto=format",
+    img: "https://res.cloudinary.com/do99wz148/image/upload/v1783631669/326_1x_shots_so_pozp2o.png",
   },
   {
     id: 3, title: "Chatty API",

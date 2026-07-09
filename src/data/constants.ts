@@ -22,7 +22,7 @@ export const getProjects = (t: (key: string) => string) => [
     description: t('projects_data.chatty.desc') || "Aplicación de mensajería instantánea en tiempo real.",
     longDesc: t('projects_data.chatty.long') || "Plataforma de chat construida con React y Socket.io. Soporta salas de chat, selectores de emojis y comunicación bidireccional de baja latencia.",
     tech: ["React", "Socket.io", "Tailwind CSS", "Zustand"],
-    url: "https://chattyclient.netlify.app/", repo: "https://github.com/RafaOsorio1/chatty-client", accent: "#FF003C", year: "2026", status: "production",
+    url: "https://chatty.rafaosorio.dev/", repo: "https://github.com/RafaOsorio1/chatty-client", accent: "#FF003C", year: "2026", status: "production",
     img: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=450&fit=crop&auto=format",
   },
   {

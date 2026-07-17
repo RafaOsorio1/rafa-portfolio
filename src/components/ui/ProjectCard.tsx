@@ -1,13 +1,7 @@
 import { ChevronRight } from 'lucide-react';
-import { PROJECTS } from '../../data/constants';
+import type { Project } from '../../data/constants';
 
-export function ProjectCard({
-  project,
-  onClick,
-}: {
-  project: (typeof PROJECTS)[0];
-  onClick: () => void;
-}) {
+export function ProjectCard({ project, onClick }: { project: Project; onClick: () => void }) {
   return (
     <button
       onClick={onClick}

@@ -344,3 +344,5 @@ export const TEAM_COLORS: Record<string, string> = {
   Mercedes: '#00D2BE',
   'Aston Martin': '#006F62',
 };
+
+export type Project = ReturnType<typeof getProjects>[0];

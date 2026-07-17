@@ -65,6 +65,7 @@
     "vaul": "1.1.2"
   },
   "devDependencies": {
+    "@rollup/rollup-win32-x64-msvc": "4.62.2",
     "@tailwindcss/vite": "4.1.12",
     "@types/node": "^26.1.1",
     "@types/react": "18.3.3",
@@ -89,6 +90,10 @@
     }
   },
   "pnpm": {
+    "supportedArchitectures": {
+      "os": ["win32", "linux", "darwin"],
+      "cpu": ["x64", "arm64"]
+    },
     "overrides": {
       "vite": "6.3.5"
     }

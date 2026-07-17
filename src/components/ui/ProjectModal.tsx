@@ -1,14 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Github, Globe, X } from 'lucide-react';
-import { PROJECTS } from '../../data/constants';
+import type { Project } from '../../data/constants';
 
-export function ProjectModal({
-  project,
-  onClose,
-}: {
-  project: (typeof PROJECTS)[0];
-  onClose: () => void;
-}) {
+export function ProjectModal({ project, onClose }: { project: Project; onClose: () => void }) {
   const [isMinimized, setIsMinimized] = useState(false);
   const [isMaximized, setIsMaximized] = useState(false);
 
@@ -149,18 +143,6 @@ export function ProjectModal({
                 >
                   <Globe size={13} /> Demo
                 </a>
-
-                {'demoBack' in project && project.demoBack && (
-                  <a
-                    href={project.demoBack as string}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-5 py-2.5 rounded text-sm font-mono transition-opacity hover:opacity-70"
-                    style={{ border: `1px solid ${project.accent}40`, color: project.accent }}
-                  >
-                    <Globe size={13} /> API Docs
-                  </a>
-                )}
 
                 {project.repo && (
                   <a

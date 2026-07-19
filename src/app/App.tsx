@@ -19,7 +19,6 @@ export default function App() {
   const [raceCarActive, setRaceCarActive] = useState(false);
   const [sudoActive, setSudoActive] = useState(false);
 
-
   const sudoBufferRef = useRef('');
 
   // Easter egg effects (Console, Konami, Sudo)

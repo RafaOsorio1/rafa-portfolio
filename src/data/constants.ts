@@ -42,7 +42,8 @@ export const getProjects = (t: (key: string) => string) => [
     id: 2,
     title: 'Decoupled Messaging Engine (Chatty)',
     description:
-      t('projects_data.chatty.desc') || 'Sistema de mensajería instantánea de baja latencia con arquitectura desacoplada.',
+      t('projects_data.chatty.desc') ||
+      'Sistema de mensajería instantánea de baja latencia con arquitectura desacoplada.',
     longDesc:
       t('projects_data.chatty.long') ||
       'Plataforma de chat bidireccional en tiempo real construida con React y Node.js. Utiliza Socket.io sobre WebSockets con pooling de conexiones y autenticación sin estado mediante JWT. La API de Express está documentada bajo estándares OpenAPI (Swagger) y optimizada para soportar salas de chat concurrentes con persistencia eficiente de mensajes.',
@@ -64,7 +65,16 @@ export const getProjects = (t: (key: string) => string) => [
     longDesc:
       t('projects_data.feedback.long') ||
       'Sistema SaaS full-stack para feedback corporativo desarrollado en colaboración con Angie Natalia. Incluye frontend en Next.js conectado a una API REST en Node.js/Express. Construido con modelado de base de datos relacional compleja en PostgreSQL, migración automatizada con Prisma, autenticación JWT con roles jerárquicos (RBAC) y documentación interactiva.',
-    tech: ['Next.js', 'React', 'Node.js', 'Express', 'PostgreSQL', 'Prisma', 'Tailwind CSS', 'Swagger'],
+    tech: [
+      'Next.js',
+      'React',
+      'Node.js',
+      'Express',
+      'PostgreSQL',
+      'Prisma',
+      'Tailwind CSS',
+      'Swagger',
+    ],
     url: 'https://feedback-net.netlify.app/',
     repo: 'https://github.com/RafaOsorio1/feedback-net',
     repoBack: 'https://github.com/RafaOsorio1/feedback-net-backend_V2',
@@ -78,7 +88,8 @@ export const getProjects = (t: (key: string) => string) => [
     id: 4,
     title: 'F1 Telemetry Dashboard (F1 Hub)',
     description:
-      t('projects_data.f1_hub.desc') || 'Visualizador de telemetría de Fórmula 1 con sincronización y caching asíncrono.',
+      t('projects_data.f1_hub.desc') ||
+      'Visualizador de telemetría de Fórmula 1 con sincronización y caching asíncrono.',
     longDesc:
       t('projects_data.f1_hub.long') ||
       'Dashboard interactivo para análisis de telemetría y resultados históricos de F1 consumiendo la API de Jolpica. Implementa una capa de backend en Node.js/Express que actúa como proxy con caché de datos en memoria para evitar el rate-limiting de la API externa, optimizando los tiempos de respuesta del cliente en un 70%.',

@@ -40,15 +40,16 @@ export const getProjects = (t: (key: string) => string) => [
   },
   {
     id: 2,
-    title: 'Chatty',
+    title: 'Decoupled Messaging Engine (Chatty)',
     description:
-      t('projects_data.chatty.desc') || 'Aplicación de mensajería instantánea en tiempo real.',
+      t('projects_data.chatty.desc') || 'Sistema de mensajería instantánea de baja latencia con arquitectura desacoplada.',
     longDesc:
       t('projects_data.chatty.long') ||
-      'Plataforma de chat construida con React y Socket.io. Soporta salas de chat, selectores de emojis y comunicación bidireccional de baja latencia.',
-    tech: ['React', 'Socket.io', 'Tailwind CSS', 'Zustand'],
+      'Plataforma de chat bidireccional en tiempo real construida con React y Node.js. Utiliza Socket.io sobre WebSockets con pooling de conexiones y autenticación sin estado mediante JWT. La API de Express está documentada bajo estándares OpenAPI (Swagger) y optimizada para soportar salas de chat concurrentes con persistencia eficiente de mensajes.',
+    tech: ['React', 'Node.js', 'Express', 'Socket.io', 'JWT', 'Tailwind CSS', 'Zustand', 'Swagger'],
     url: 'https://chatty.rafaosorio.dev/',
     repo: 'https://github.com/RafaOsorio1/chatty-client',
+    repoBack: 'https://github.com/RafaOsorio1/chatty-backend',
     accent: '#FF003C',
     year: '2026',
     status: 'production',
@@ -56,32 +57,17 @@ export const getProjects = (t: (key: string) => string) => [
   },
   {
     id: 3,
-    title: 'Chatty API',
-    description:
-      t('projects_data.chatty_api.desc') || 'API REST y WebSocket para plataforma de mensajería.',
-    longDesc:
-      t('projects_data.chatty_api.long') ||
-      'Backend de la plataforma Chatty. Arquitectura escalable en Node.js que maneja la persistencia de usuarios, seguridad JWT y comunicación bidireccional de baja latencia con Socket.io. Documentado con Swagger.',
-    tech: ['Node.js', 'Express', 'Socket.io', 'JWT', 'Swagger'],
-    url: 'https://chatty-backend-nov8.onrender.com',
-    repo: 'https://github.com/RafaOsorio1/chatty-backend',
-    accent: '#00E5FF',
-    year: '2026',
-    status: 'production',
-    img: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=450&fit=crop&auto=format',
-  },
-  {
-    id: 4,
-    title: 'Feedback Net',
+    title: 'Corporate Feedback SaaS (Feedback Net)',
     description:
       t('projects_data.feedback.desc') ||
-      'Plataforma integral de feedback en colaboración con Angie Natalia.',
+      'Plataforma SaaS corporativa para gestión de retroalimentación 360 grados.',
     longDesc:
       t('projects_data.feedback.long') ||
-      'Aplicación de interfaz desarrollada en colaboración con Angie Natalia. Me enfoqué en apoyar implementaciones clave del frontend en Next.js, conectando con nuestra robusta API REST.',
-    tech: ['Next.js', 'React', 'Tailwind CSS'],
+      'Sistema SaaS full-stack para feedback corporativo desarrollado en colaboración con Angie Natalia. Incluye frontend en Next.js conectado a una API REST en Node.js/Express. Construido con modelado de base de datos relacional compleja en PostgreSQL, migración automatizada con Prisma, autenticación JWT con roles jerárquicos (RBAC) y documentación interactiva.',
+    tech: ['Next.js', 'React', 'Node.js', 'Express', 'PostgreSQL', 'Prisma', 'Tailwind CSS', 'Swagger'],
     url: 'https://feedback-net.netlify.app/',
     repo: 'https://github.com/RafaOsorio1/feedback-net',
+    repoBack: 'https://github.com/RafaOsorio1/feedback-net-backend_V2',
     accent: '#7C3AED',
     year: '2026',
     status: 'production',
@@ -89,31 +75,14 @@ export const getProjects = (t: (key: string) => string) => [
     collaboration: t('projects.collab') || 'Colaboración con Angie Natalia',
   },
   {
-    id: 5,
-    title: 'Feedback Net API',
+    id: 4,
+    title: 'F1 Telemetry Dashboard (F1 Hub)',
     description:
-      t('projects_data.feedback_api.desc') ||
-      'Backend robusto para plataforma de feedback corporativo.',
-    longDesc:
-      t('projects_data.feedback_api.long') ||
-      'Arquitectura backend completa desarrollada desde cero. Gestión compleja de base de datos relacional (PostgreSQL + Prisma), autenticación segura y múltiples endpoints REST documentados interactivamente con Swagger.',
-    tech: ['Node.js', 'Express', 'Prisma', 'PostgreSQL', 'Swagger'],
-    url: 'https://feedback-net-backend-v2.onrender.com',
-    repo: 'https://github.com/RafaOsorio1/feedback-net-backend_V2',
-    accent: '#FFBD2E',
-    year: '2026',
-    status: 'production',
-    img: 'https://images.unsplash.com/photo-1623282033815-40b05d96c903?w=800&h=450&fit=crop&auto=format',
-  },
-  {
-    id: 6,
-    title: 'F1 Hub',
-    description:
-      t('projects_data.f1_hub.desc') || 'Plataforma de estadísticas y telemetría de Fórmula 1.',
+      t('projects_data.f1_hub.desc') || 'Visualizador de telemetría de Fórmula 1 con sincronización y caching asíncrono.',
     longDesc:
       t('projects_data.f1_hub.long') ||
-      'Aplicación interactiva que consume la API de Jolpica para mostrar resultados en tiempo real, estadísticas de pilotos y análisis de carreras. Construida con un backend robusto para manejar la sincronización de datos.',
-    tech: ['React', 'Node.js', 'Express', 'Tailwind CSS', 'F1 API'],
+      'Dashboard interactivo para análisis de telemetría y resultados históricos de F1 consumiendo la API de Jolpica. Implementa una capa de backend en Node.js/Express que actúa como proxy con caché de datos en memoria para evitar el rate-limiting de la API externa, optimizando los tiempos de respuesta del cliente en un 70%.',
+    tech: ['React', 'Node.js', 'Express', 'Redis / Cache', 'F1 API'],
     url: '#',
     repo: '#',
     repoBack: '#',

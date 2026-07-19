@@ -13,6 +13,7 @@ export const KONAMI = [
 
 export const NAV_ITEMS = [
   { key: 'nav.about', href: '#about' },
+  { key: 'nav.experience', href: '#experience' },
   { key: 'nav.projects', href: '#projects' },
   { key: 'nav.skills', href: '#skills' },
   { key: 'nav.interests', href: '#interests' },

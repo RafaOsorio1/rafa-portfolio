@@ -2,6 +2,7 @@ export const translations = {
   es: {
     nav: {
       about: 'Sobre mí',
+      experience: 'Experiencia',
       projects: 'Proyectos',
       skills: 'Herramientas',
       interests: 'Intereses',
@@ -68,6 +69,22 @@ export const translations = {
       viewLive: 'Visitar Sitio',
       collab: 'Colaboración',
       close: 'Cerrar',
+    },
+    experience_data: {
+      label: 'experiencia',
+      title: 'Trayectoria Profesional.',
+      jobs: [
+        {
+          role: 'Software Engineer',
+          company: 'nClarity',
+          period: '2020 - Presente',
+          bullets: [
+            'Diseñé e implementé una plataforma integral para el monitoreo IoT de sistemas de climatización (HVAC) en grandes edificios, procesando telemetría continua a través de Azure IoT Hub.',
+            'Desarrollé la arquitectura backend con Node.js y Express, orquestada en contenedores Docker, para ingerir, procesar con algoritmos analíticos y almacenar de manera eficiente series temporales de datos en TimescaleDB.',
+            'Lideré el desarrollo del frontend (React / Next.js) construyendo dashboards interactivos que permiten a los usuarios visualizar gráficas en tiempo real y gestionar el inventario de dispositivos a escala.',
+          ],
+        },
+      ],
     },
     skills: {
       label: 'herramientas',
@@ -171,6 +188,7 @@ export const translations = {
   en: {
     nav: {
       about: 'About',
+      experience: 'Experience',
       projects: 'Projects',
       skills: 'Skills',
       interests: 'Interests',
@@ -237,6 +255,22 @@ export const translations = {
       viewLive: 'Visit Site',
       collab: 'Collaboration',
       close: 'Close',
+    },
+    experience_data: {
+      label: 'experience',
+      title: 'Professional Trajectory.',
+      jobs: [
+        {
+          role: 'Software Engineer',
+          company: 'nClarity',
+          period: '2020 - Present',
+          bullets: [
+            'Designed and implemented an end-to-end IoT monitoring platform for HVAC systems in large-scale buildings, processing continuous telemetry via Azure IoT Hub.',
+            'Developed the backend architecture with Node.js and Express, orchestrated in Docker containers, to ingest, mathematically process, and efficiently store time-series data in TimescaleDB.',
+            'Led frontend development (React / Next.js) building interactive analytical dashboards that allow users to visualize real-time graphs and manage device inventory at scale.',
+          ],
+        },
+      ],
     },
     skills: {
       label: 'skills',

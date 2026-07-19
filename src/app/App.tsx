@@ -4,6 +4,7 @@ import { KONAMI } from '../data/constants';
 import { Navigation } from '../components/layout/Navigation';
 import { Hero } from '../sections/Hero';
 import { About } from '../sections/About';
+import { Experience } from '../sections/Experience';
 import { Projects } from '../sections/Projects';
 import { Skills } from '../sections/Skills';
 import { Interests } from '../sections/Interests';
@@ -231,6 +232,7 @@ export default function App() {
 
       <Hero />
       <About />
+      <Experience />
       <Projects />
       <Skills />
       <Interests activePet={activePet} petBubble={petBubble} handlePetClick={handlePetClick} />

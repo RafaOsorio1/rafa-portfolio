@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 import { NAV_ITEMS, KONAMI } from '../../data/constants';
 import { useLanguage } from '../../context/LanguageContext';
 
@@ -9,6 +11,7 @@ interface NavigationProps {
 
 export function Navigation({ activeSection, handleLogoClick, konamiProgress }: NavigationProps) {
   const { language, toggleLanguage, t } = useLanguage();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <nav
@@ -70,8 +73,43 @@ export function Navigation({ activeSection, handleLogoClick, konamiProgress }: N
           >
             {language === 'es' ? 'EN' : 'ES'}
           </button>
+
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="block md:hidden p-2 rounded text-slate-400 hover:text-white focus:outline-none"
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
         </div>
       </div>
+
+      {isMobileMenuOpen && (
+        <div
+          className="absolute top-14 left-0 right-0 md:hidden flex flex-col p-6 space-y-4 border-b animate-fade-up"
+          style={{
+            background: 'rgba(6, 6, 14, 0.95)',
+            borderBottom: '1px solid rgba(0, 229, 255, 0.15)',
+            backdropFilter: 'blur(20px)',
+          }}
+        >
+          {NAV_ITEMS.map((item) => {
+            const isActive = activeSection === item.href.slice(1);
+            return (
+              <a
+                key={item.key}
+                href={item.href}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="font-mono text-sm tracking-wider uppercase py-2"
+                style={{ color: isActive ? '#00E5FF' : '#64748B' }}
+              >
+                {isActive && <span style={{ color: '#FF003C' }}>{'>'} </span>}
+                {t(item.key)}
+              </a>
+            );
+          })}
+        </div>
+      )}
     </nav>
   );
 }

@@ -90,10 +90,10 @@ export const translations = {
       label: 'herramientas',
       title: 'Mi stack tecnológico.',
       categories: {
-        frontend: 'Frontend',
-        backend: 'Backend',
-        databases: 'Bases de datos',
-        tools: 'Herramientas / Infra',
+        languages: 'Lenguajes y Entornos',
+        frontend: 'Arquitectura Frontend',
+        databases: 'Bases de Datos y Caché',
+        devops: 'Cloud, DevOps e Infra',
       },
     },
     interests_section: {
@@ -268,10 +268,10 @@ export const translations = {
       label: 'skills',
       title: 'My tech stack.',
       categories: {
-        frontend: 'Frontend',
-        backend: 'Backend',
-        databases: 'Databases',
-        tools: 'Tools / Infra',
+        languages: 'Languages & Runtimes',
+        frontend: 'Frontend Architecture',
+        databases: 'Databases & Caching',
+        devops: 'Cloud, DevOps & Infra',
       },
     },
     interests_section: {

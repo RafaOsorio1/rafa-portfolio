@@ -30,21 +30,6 @@ export function Skills() {
                 >
                   {skill.category}
                 </span>
-                <span className="text-xs font-mono font-bold" style={{ color: skill.color }}>
-                  {skill.level}%
-                </span>
-              </div>
-              <div
-                className="h-1 rounded-full overflow-hidden"
-                style={{ background: 'rgba(255,255,255,0.06)' }}
-              >
-                <div
-                  className="h-full rounded-full"
-                  style={{
-                    width: `${skill.level}%`,
-                    background: `linear-gradient(90deg, ${skill.color}60, ${skill.color})`,
-                  }}
-                />
               </div>
               <div className="flex flex-wrap gap-2">
                 {skill.items.map((item) => (

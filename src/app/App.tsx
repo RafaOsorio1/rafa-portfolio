@@ -9,7 +9,6 @@ import { Projects } from '../sections/Projects';
 import { Skills } from '../sections/Skills';
 import { Interests } from '../sections/Interests';
 import { Contact } from '../sections/Contact';
-import { useLanguage } from '../context/LanguageContext';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -20,10 +19,6 @@ export default function App() {
   const [raceCarActive, setRaceCarActive] = useState(false);
   const [sudoActive, setSudoActive] = useState(false);
 
-  const [petBubble, setPetBubble] = useState<string | null>(null);
-  const [activePet, setActivePet] = useState<string | null>(null);
-
-  const { t } = useLanguage();
 
   const sudoBufferRef = useRef('');
 
@@ -95,37 +90,6 @@ export default function App() {
       setLogoClicks(0);
       setTimeout(() => setRaceCarActive(false), 3500);
     }
-  };
-
-  const handlePetClick = (key: string) => {
-    const msgs: Record<string, string[]> = {
-      dog: [
-        t('interests_section.pets_data.roxy.b1') || '¡Woof! 🐕',
-        t('interests_section.pets_data.roxy.b2') || '¡Ruf ruf!',
-        t('interests_section.pets_data.roxy.b3') || '¡Juguemos! 🎾',
-        t('interests_section.pets_data.roxy.b4') || '*mueve la cola frenéticamente*',
-      ],
-      cat1: [
-        t('interests_section.pets_data.nova.b1') || '...miau',
-        t('interests_section.pets_data.nova.b2') || '*te ignora olímpicamente*',
-        t('interests_section.pets_data.nova.b3') || 'Mrrrow 🐱',
-        t('interests_section.pets_data.nova.b4') || '*ronronea y te da palmadas*',
-      ],
-      cat2: [
-        t('interests_section.pets_data.sooky.b1') || 'Nyaa~',
-        t('interests_section.pets_data.sooky.b2') || '*bosteza con drama*',
-        t('interests_section.pets_data.sooky.b3') || 'Miau. 😤',
-        t('interests_section.pets_data.sooky.b4') ||
-          '*tira algo de la mesa para llamar tu atención*',
-      ],
-    };
-    const list = msgs[key] || ['...'];
-    setActivePet(key);
-    setPetBubble(list[Math.floor(Math.random() * list.length)]);
-    setTimeout(() => {
-      setPetBubble(null);
-      setActivePet(null);
-    }, 2800);
   };
 
   return (
@@ -235,7 +199,7 @@ export default function App() {
       <Experience />
       <Projects />
       <Skills />
-      <Interests activePet={activePet} petBubble={petBubble} handlePetClick={handlePetClick} />
+      <Interests />
       <Contact />
     </div>
   );

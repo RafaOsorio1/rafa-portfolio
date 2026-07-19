@@ -220,19 +220,7 @@ function GamesTab() {
               {game.title}
             </h4>
             <div className="text-xs font-mono mb-3" style={{ color: '#64748B' }}>
-              {game.genre} · {game.hours}
-            </div>
-            <div className="flex gap-0.5">
-              {Array.from({ length: 10 }).map((_, i) => (
-                <div
-                  key={i}
-                  className="h-1 flex-1 rounded-sm transition-all"
-                  style={{ background: i < game.rating ? '#7C3AED' : 'rgba(124,58,237,0.15)' }}
-                />
-              ))}
-            </div>
-            <div className="text-xs font-mono mt-2 text-right" style={{ color: '#7C3AED' }}>
-              {game.rating}/10
+              {game.genre}
             </div>
           </div>
         </div>
@@ -272,15 +260,7 @@ function MoviesTab() {
   );
 }
 
-function PetsTab({
-  activePet,
-  petBubble,
-  onPetClick,
-}: {
-  activePet: string | null;
-  petBubble: string | null;
-  onPetClick: (key: string) => void;
-}) {
+function PetsTab() {
   const { t } = useLanguage();
   const pets = [
     {
@@ -330,20 +310,11 @@ function PetsTab({
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
       {pets.map((pet) => (
-        <button
+        <div
           key={pet.key}
-          onClick={() => onPetClick(pet.key)}
           className="group text-left rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 relative"
           style={{ border: `1px solid ${pet.color}30`, background: pet.color + '08' }}
         >
-          {activePet === pet.key && petBubble && (
-            <div
-              className="absolute top-3 left-1/2 -translate-x-1/2 z-10 px-3 py-1.5 rounded-full text-xs font-bold whitespace-nowrap shadow-lg"
-              style={{ background: pet.color, color: '#06060E' }}
-            >
-              {petBubble}
-            </div>
-          )}
           <div className="h-48 overflow-hidden">
             <img
               src={pet.img}
@@ -379,23 +350,14 @@ function PetsTab({
             >
               💡 {pet.fact}
             </div>
-            <div className="text-xs font-mono text-center pt-1" style={{ color: pet.color + '66' }}>
-              {t('interests_section.pets_data.click') || '[ click para saludar ]'}
-            </div>
           </div>
-        </button>
+        </div>
       ))}
     </div>
   );
 }
 
-interface InterestsProps {
-  activePet: string | null;
-  petBubble: string | null;
-  handlePetClick: (key: string) => void;
-}
-
-export function Interests({ activePet, petBubble, handlePetClick }: InterestsProps) {
+export function Interests() {
   const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState<'f1' | 'games' | 'movies' | 'pets'>('f1');
 
@@ -454,9 +416,7 @@ export function Interests({ activePet, petBubble, handlePetClick }: InterestsPro
           {activeTab === 'f1' && <F1Tab />}
           {activeTab === 'games' && <GamesTab />}
           {activeTab === 'movies' && <MoviesTab />}
-          {activeTab === 'pets' && (
-            <PetsTab activePet={activePet} petBubble={petBubble} onPetClick={handlePetClick} />
-          )}
+          {activeTab === 'pets' && <PetsTab />}
         </div>
       </div>
     </section>

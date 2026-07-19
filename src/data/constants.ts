@@ -95,33 +95,16 @@ export const getProjects = (t: (key: string) => string) => [
 
 export const getSkills = (t: (key: string) => string) => [
   {
-    category: t('skills.categories.frontend') || 'Frontend',
+    category: t('skills.categories.languages') || 'Languages & Runtimes',
     items: [
-      {
-        name: 'React 19',
-        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
-      },
       {
         name: 'TypeScript',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
       },
       {
-        name: 'Tailwind CSS',
-        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+        name: 'JavaScript',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
       },
-      { name: 'Zustand', icon: '' },
-      { name: 'React Query', icon: '' },
-      {
-        name: 'Vite',
-        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg',
-      },
-    ],
-    level: 95,
-    color: '#00E5FF',
-  },
-  {
-    category: t('skills.categories.backend') || 'Backend',
-    items: [
       {
         name: 'Node.js',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
@@ -130,27 +113,40 @@ export const getSkills = (t: (key: string) => string) => [
         name: 'Express',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
       },
-      {
-        name: 'Socket.io',
-        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg',
-      },
-      { name: 'JWT', icon: '' },
-      { name: 'Zod', icon: '' },
-      { name: 'Bcrypt', icon: '' },
+      { name: 'SQL', icon: '' },
     ],
-    level: 90,
+    color: '#00E5FF',
+  },
+  {
+    category: t('skills.categories.frontend') || 'Frontend Architecture',
+    items: [
+      {
+        name: 'React 19',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+      },
+      {
+        name: 'Next.js',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
+      },
+      { name: 'React Query', icon: '' },
+      { name: 'Zustand', icon: '' },
+      {
+        name: 'Tailwind CSS',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+      },
+      {
+        name: 'Vite',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg',
+      },
+    ],
     color: '#FF003C',
   },
   {
-    category: t('skills.categories.databases') || 'Bases de Datos',
+    category: t('skills.categories.databases') || 'Databases & Caching',
     items: [
       {
         name: 'PostgreSQL',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
-      },
-      {
-        name: 'Prisma ORM',
-        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg',
       },
       {
         name: 'Redis',
@@ -160,36 +156,37 @@ export const getSkills = (t: (key: string) => string) => [
         name: 'MongoDB',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg',
       },
+      {
+        name: 'Prisma ORM',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg',
+      },
     ],
-    level: 85,
     color: '#FFD700',
   },
   {
-    category: t('skills.categories.tools') || 'Herramientas / Infra',
+    category: t('skills.categories.devops') || 'Cloud, DevOps & Tooling',
     items: [
       {
-        name: 'Git',
-        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
+        name: 'Azure',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
       },
-      {
-        name: 'GitHub',
-        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg',
-      },
-      { name: 'Cloudinary', icon: '' },
       {
         name: 'Docker',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
       },
       {
-        name: 'Jira',
-        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg',
+        name: 'Git',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
       },
       {
-        name: 'Azure',
-        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
+        name: 'GitHub Actions',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg',
+      },
+      {
+        name: 'Swagger',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg',
       },
     ],
-    level: 85,
     color: '#7C3AED',
   },
 ];
@@ -198,54 +195,42 @@ export const GAMES = [
   {
     title: 'F1 24',
     platform: 'Xbox',
-    hours: '350h+',
     genre: 'Racing',
-    rating: 10,
     icon: '🏎️',
     img: 'https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2488620/capsule_231x87.jpg',
   },
   {
     title: 'Call of Duty',
     platform: 'Xbox',
-    hours: '400h+',
     genre: 'Shooter',
-    rating: 9,
     icon: '🎯',
     img: 'https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1938090/capsule_231x87.jpg',
   },
   {
     title: 'Minecraft',
     platform: 'Xbox',
-    hours: '250h+',
     genre: 'Sandbox',
-    rating: 10,
     icon: '⛏️',
     img: 'https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=300&h=100&fit=crop',
   },
   {
     title: 'Warframe',
     platform: 'Xbox',
-    hours: '500h+',
     genre: 'Action RPG',
-    rating: 9,
     icon: '🥷',
     img: 'https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/230410/capsule_231x87.jpg',
   },
   {
     title: 'Elden Ring',
     platform: 'Xbox',
-    hours: '210h',
     genre: 'Souls-like',
-    rating: 10,
     icon: '⚔️',
     img: 'https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_231x87.jpg',
   },
   {
     title: 'The Witcher 3',
     platform: 'Xbox',
-    hours: '280h',
     genre: 'RPG',
-    rating: 10,
     icon: '🐺',
     img: 'https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/292030/capsule_231x87.jpg',
   },

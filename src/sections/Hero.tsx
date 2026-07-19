@@ -6,11 +6,11 @@ export function Hero() {
   const { t } = useLanguage();
 
   const typewriterText = [
-    t('hero.tw1') || 'Desarrollador Full-Stack.',
-    t('hero.tw2') || 'Gamer de corazón.',
-    t('hero.tw3') || 'Fan de la Fórmula 1.',
-    t('hero.tw4') || 'Amante del buen cine.',
-    t('hero.tw5') || 'Papá de Roxy, Nova y Sooky.',
+    t('hero.tw1'),
+    t('hero.tw2'),
+    t('hero.tw3'),
+    t('hero.tw4'),
+    t('hero.tw5'),
   ];
   const [heroIndex, setHeroIndex] = useState(0);
   const [typedText, setTypedText] = useState('');

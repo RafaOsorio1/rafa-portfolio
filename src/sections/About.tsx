@@ -24,10 +24,10 @@ export function About() {
             </div>
             <div className="grid grid-cols-2 gap-3 pt-2">
               {[
-                { label: t('about.stats.yoe'), value: '4+' },
-                { label: t('about.stats.projects'), value: '30+' },
-                { label: t('about.stats.coffee'), value: '∞' },
-                { label: t('about.stats.games'), value: '2k+' },
+                { label: t('about.stats.yoe'), value: '4+ Yoe' },
+                { label: t('about.stats.projects'), value: '15+' },
+                { label: t('about.stats.coffee'), value: '<150ms' },
+                { label: t('about.stats.games'), value: '85%+' },
               ].map((s) => (
                 <div
                   key={s.label}
@@ -78,16 +78,10 @@ export function About() {
                 color: '#00E5FF',
               },
               {
-                icon: '🐕',
-                label: t('about.interests.roxy.label'),
-                sub: t('about.interests.roxy.sub'),
+                icon: '🐾',
+                label: t('about.interests.pets.label'),
+                sub: t('about.interests.pets.sub'),
                 color: '#FF6B35',
-              },
-              {
-                icon: '🐱',
-                label: t('about.interests.cats.label'),
-                sub: t('about.interests.cats.sub'),
-                color: '#FFD700',
               },
             ].map((item) => (
               <div key={item.label} className="group flex items-center gap-4 cursor-default">

@@ -28,15 +28,15 @@ export const translations = {
     },
     about: {
       label: 'sobre_mí',
-      title: 'Full-Stack Dev.',
-      subtitle: 'Apasionado del detalle.',
-      p1: 'Soy un Full Stack Developer apasionado por crear aplicaciones web modernas, escalables y en tiempo real. Disfruto trabajando tanto en el frontend como en el backend, utilizando tecnologías como React, Node.js y bases de datos relacionales para dar vida a ideas complejas.',
-      p2: 'Además de programar por pura pasión en mis ratos libres, disfruto de desconectar explorando mundos en videojuegos, siguiendo de cerca la estrategia de la Fórmula 1, apreciando el buen cine de ciencia ficción y compartiendo tiempo con mi familia peluda (Roxy, Nova y Sooky).',
+      title: 'Software Engineer',
+      subtitle: 'Arquitectura y Escala.',
+      p1: 'Software Engineer con más de 4 años de experiencia profesional diseñando y construyendo sistemas distribuidos y arquitecturas web de alto rendimiento. Especializado en el desarrollo de APIs robustas e idempotentes en Node.js, interfaces reactivas y optimizadas en React, y despliegues cloud en Azure bajo contenedores Docker. Mi enfoque está orientado a resolver cuellos de botella de rendimiento, sincronización de datos en tiempo real y optimización de bases de datos relacionales (PostgreSQL).',
+      p2: 'Fuera de la ingeniería de software, me interesa la telemetría y el análisis de datos aplicados a la Fórmula 1, el cine de ciencia ficción (especialmente el cine de Nolan y Villeneuve) y compartir tiempo con mis mascotas Roxy, Nova y Sooky.',
       stats: {
-        yoe: 'Años de experiencia',
-        projects: 'Proyectos completados',
-        coffee: 'Cafés consumidos',
-        games: 'Horas en videojuegos',
+        yoe: 'Experiencia / Experience',
+        projects: 'Sistemas Cloud / Cloud Systems',
+        coffee: 'Latencia API / Avg Latency',
+        games: 'Pruebas Unitarias / Test Coverage',
       },
       interests: {
         programming: {
@@ -55,13 +55,9 @@ export const translations = {
           label: 'Cine',
           sub: 'Sci-Fi · Thriller · Todo lo de Nolan y Villeneuve',
         },
-        roxy: {
-          label: 'Roxy',
-          sub: 'La mejor perrita del mundo. Sin debate.',
-        },
-        cats: {
-          label: 'Nova & Sooky',
-          sub: 'Las jefas del hogar · No aceptan cuestionamientos',
+        pets: {
+          label: 'Mascotas',
+          sub: 'Roxy, Nova y Sooky · Compañeras de vida y código',
         },
       },
     },
@@ -201,15 +197,15 @@ export const translations = {
     },
     about: {
       label: 'about_me',
-      title: 'Full-Stack Dev.',
-      subtitle: 'Passionate about details.',
-      p1: "I'm a Full Stack Developer passionate about building modern, scalable, and real-time web applications. I enjoy working on both the frontend and backend, using technologies like React, Node.js, and relational databases to bring complex ideas to life.",
-      p2: 'Besides programming for pure passion in my free time, I enjoy disconnecting by exploring worlds in video games, closely following Formula 1 strategy, appreciating good sci-fi cinema, and sharing time with my furry family (Roxy, Nova, and Sooky).',
+      title: 'Software Engineer',
+      subtitle: 'Architecture & Scale.',
+      p1: 'Software Engineer with 4+ years of professional experience designing and building distributed systems and high-performance web architectures. Specialized in developing robust, idempotent APIs with Node.js, optimized reactive interfaces in React, and cloud deployments on Azure using Docker containers. My engineering focus is centered on resolving performance bottlenecks, real-time data synchronization, and relational database query optimization (PostgreSQL).',
+      p2: 'Outside of software engineering, I am deeply interested in data telemetry and strategic analysis in Formula 1, sci-fi cinema (especially Christopher Nolan and Denis Villeneuve), and spending time with my three pets, Roxy, Nova, and Sooky.',
       stats: {
-        yoe: 'Years of experience',
-        projects: 'Completed projects',
-        coffee: 'Coffees consumed',
-        games: 'Hours in games',
+        yoe: 'Experience',
+        projects: 'Cloud Systems',
+        coffee: 'Avg Latency',
+        games: 'Test Coverage',
       },
       interests: {
         programming: {
@@ -228,13 +224,9 @@ export const translations = {
           label: 'Cinema',
           sub: 'Sci-Fi · Thriller · Everything Nolan and Villeneuve',
         },
-        roxy: {
-          label: 'Roxy',
-          sub: 'The best dog in the world. No debate.',
-        },
-        cats: {
-          label: 'Nova & Sooky',
-          sub: 'The bosses of the house · No questions asked',
+        pets: {
+          label: 'Pets',
+          sub: 'Roxy, Nova, and Sooky · Life and code companions',
         },
       },
     },

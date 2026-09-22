@@ -75,13 +75,20 @@ export const translations = {
       title: 'Trayectoria Profesional.',
       jobs: [
         {
-          role: 'Software Engineer',
+          role: 'Software Developer',
           company: 'nClarity',
-          period: '2020 - Presente',
+          period: 'Enero 2023 - Presente',
           bullets: [
-            'Lideré el mantenimiento, resolución de errores y desarrollo de nuevas funcionalidades end-to-end para una plataforma de monitoreo IoT de sistemas HVAC a gran escala usando Azure IoT Hub.',
-            'Evolucioné la arquitectura backend (Node.js/Express sobre Docker) y optimicé flujos de bases de datos (TimescaleDB) para examinar, extraer y procesar de forma precisa puntos específicos en el flujo continuo de telemetría.',
-            'Modernicé el frontend del dashboard analítico en React/Next.js, orquestando migraciones críticas de librerías (Highcharts a AG Grid) y adoptando React Query para la gestión eficiente del estado asíncrono.',
+            'Desarrollé y mantuve aplicaciones web utilizando React, TypeScript, Next.js y Node.js, participando tanto en frontend como backend.',
+            'Construí componentes de UI reutilizables utilizando Chakra UI, Emotion, React Hook Form, Yup y TanStack Table.',
+            'Diseñé e implementé funcionalidades completas, desde la interfaz y lógica de negocio hasta la integración con APIs y persistencia de datos.',
+            'Integré y desarrollé REST APIs, autenticación mediante OAuth y servicios internos y de terceros.',
+            'Trabajé con servicios cloud de Microsoft Azure, incluyendo Azure Functions, Event Hub, IoT Hub, App Service y Key Vault.',
+            'Implementé y trabajé con arquitecturas orientadas a eventos para procesamiento de información y datos en tiempo real.',
+            'Trabajé con MySQL, Azure SQL, Prisma, Redis e InfluxDB para diferentes necesidades de persistencia, caché y datos de series temporales.',
+            'Desarrollé funcionalidades relacionadas con datos en tiempo real, utilizando tecnologías como Socket.IO y servicios de Azure.',
+            'Optimicé el rendimiento de aplicaciones y solucioné problemas utilizando herramientas de desarrollo y debugging.',
+            'Utilicé Git, Docker y CI/CD como parte del flujo de desarrollo y despliegue.'
           ],
         },
       ],
@@ -253,13 +260,20 @@ export const translations = {
       title: 'Professional Trajectory.',
       jobs: [
         {
-          role: 'Software Engineer',
+          role: 'Software Developer',
           company: 'nClarity',
-          period: '2020 - Present',
+          period: 'Jan 2023 - Present',
           bullets: [
-            'Led the maintenance, troubleshooting, and end-to-end feature development for a large-scale IoT monitoring platform for HVAC systems leveraging Azure IoT Hub.',
-            'Evolved the backend architecture (Node.js/Express on Docker) and optimized database workflows (TimescaleDB) to traverse, extract, and precisely process specific telemetry data points from continuous streams.',
-            'Modernized the frontend analytical dashboards in React/Next.js, orchestrating critical data visualization migrations (Highcharts to AG Grid) and adopting React Query for efficient asynchronous state management.',
+            'Developed and maintained web applications using React, TypeScript, Next.js, and Node.js, participating in both frontend and backend.',
+            'Built reusable UI components using Chakra UI, Emotion, React Hook Form, Yup, and TanStack Table.',
+            'Designed and implemented end-to-end features, from UI and business logic to API integration and data persistence.',
+            'Integrated and developed REST APIs, OAuth authentication, and internal/third-party services.',
+            'Worked with Microsoft Azure cloud services, including Azure Functions, Event Hub, IoT Hub, App Service, and Key Vault.',
+            'Implemented and worked with event-driven architectures for information processing and real-time data.',
+            'Worked with MySQL, Azure SQL, Prisma, Redis, and InfluxDB for diverse persistence, caching, and time-series data needs.',
+            'Developed real-time data features utilizing technologies like Socket.IO and Azure services.',
+            'Optimized application performance and troubleshooted issues using development and debugging tools.',
+            'Utilized Git, Docker, and CI/CD as part of the development and deployment workflow.'
           ],
         },
       ],

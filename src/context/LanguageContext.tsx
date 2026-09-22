@@ -12,10 +12,23 @@ interface LanguageContextProps {
 const LanguageContext = createContext<LanguageContextProps | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>('es');
+  const [language, setLanguage] = useState<Language>(() => {
+    const saved = localStorage.getItem('language');
+    if (saved === 'es' || saved === 'en') return saved;
+    
+    // Si no hay preferencia guardada, revisa el idioma del navegador
+    const browserLang = navigator.language.toLowerCase();
+    if (browserLang.startsWith('es')) return 'es';
+    
+    return 'en'; // Por defecto inglés para el resto del mundo
+  });
 
   const toggleLanguage = () => {
-    setLanguage((prev) => (prev === 'es' ? 'en' : 'es'));
+    setLanguage((prev) => {
+      const nextLang = prev === 'es' ? 'en' : 'es';
+      localStorage.setItem('language', nextLang);
+      return nextLang;
+    });
   };
 
   const t = (key: string): string => {

@@ -182,6 +182,14 @@ export const translations = {
         desc: 'Visualizador de telemetría de Fórmula 1 con sincronización y caching asíncrono.',
         long: 'Dashboard interactivo para análisis de telemetría y resultados históricos de F1 consumiendo la API de Jolpica. Implementa una capa de backend en Node.js/Express que actúa como proxy con caché de datos en memoria para evitar el rate-limiting de la API externa, optimizando los tiempos de respuesta del cliente en un 70%.',
       },
+      parking_web: {
+        desc: 'Panel web de operaciones en tiempo real para administración de parqueaderos comerciales.',
+        long: 'Frontend SPA construido con React 19, Vite y TanStack Router. Implementa interfaces de usuario de alta interactividad con Tailwind CSS para taquilla rápida, mapas de ocupación y reportes de facturación, consumiendo una API centralizada.',
+      },
+      parking_api: {
+        desc: 'API REST centralizada de alto rendimiento para control y cobro en parqueaderos.',
+        long: 'Backend robusto desarrollado en Express 5 y TypeScript. Utiliza Prisma ORM para interactuar con una base de datos PostgreSQL serverless en Neon. Gestiona las reglas de negocio, arqueos, tarifas dinámicas y autenticación JWT, estructurado dentro de un monorepo pnpm.',
+      },
     },
   },
   en: {
@@ -366,6 +374,14 @@ export const translations = {
       f1_hub: {
         desc: 'F1 telemetry dashboard with asynchronous data synchronization and caching.',
         long: 'Interactive dashboard for F1 telemetry analysis and historical race statistics. Integrates a Node.js/Express backend proxy layer that caches external API (Jolpica) payloads to mitigate rate-limiting, resulting in a 70% reduction in client-side loading latency.',
+      },
+      parking_web: {
+        desc: 'Real-time web operations dashboard for commercial parking lot management.',
+        long: 'Frontend SPA built with React 19, Vite, and TanStack Router. Implements highly interactive user interfaces using Tailwind CSS for fast ticketing, occupancy maps, and billing reports, seamlessly consuming a centralized API.',
+      },
+      parking_api: {
+        desc: 'High-performance centralized REST API for parking control and billing.',
+        long: 'Robust backend developed with Express 5 and TypeScript. Uses Prisma ORM to interact with a serverless PostgreSQL database on Neon. Manages business rules, cash registers, dynamic pricing, and JWT authentication, structured within a pnpm monorepo.',
       },
     },
   },

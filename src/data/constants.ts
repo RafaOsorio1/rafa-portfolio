@@ -31,8 +31,8 @@ export const getProjects = (t: (key: string) => string) => [
       'E-commerce full-stack desarrollado con React 19 y Node.js. Incluye carrito de compras, gestión de estado con Zustand, base de datos PostgreSQL gestionada con Prisma, y websockets para notificaciones en tiempo real.',
     tech: ['React', 'Node.js', 'PostgreSQL', 'Prisma', 'Tailwind CSS', 'Zustand', 'Socket.io'],
     url: '#',
-    repo: '#',
-    repoBack: '#',
+    repo: 'https://github.com/RafaOsorio1/easyShop_front',
+    repoBack: 'https://github.com/RafaOsorio1/backend-easyshop',
     accent: '#00E5FF',
     year: '2024',
     status: 'production',
@@ -58,6 +58,24 @@ export const getProjects = (t: (key: string) => string) => [
   },
   {
     id: 3,
+    title: 'Decoupled Messaging Engine (Chatty-API)',
+    description:
+      t('projects_data.chatty.desc') ||
+      'Sistema de mensajería instantánea de baja latencia con arquitectura desacoplada. API RESTful para el backend de Chatty.',
+    longDesc:
+      t('projects_data.chatty.long') ||
+      'Plataforma de chat bidireccional en tiempo real construida con React y Node.js. Utiliza Socket.io sobre WebSockets con pooling de conexiones y autenticación sin estado mediante JWT. La API de Express está documentada bajo estándares OpenAPI (Swagger) y optimizada para soportar salas de chat concurrentes con persistencia eficiente de mensajes.',
+    tech: ['Node.js', 'Express', 'Socket.io', 'JWT', 'Swagger'],
+    url: 'https://chatty-api.rafaosorio.dev/api-docs/',
+    repo: 'https://github.com/RafaOsorio1/chatty-client',
+    repoBack: 'https://github.com/RafaOsorio1/chatty-backend',
+    accent: '#FF006C',
+    year: '2026',
+    status: 'production',
+    img: 'https://res.cloudinary.com/do99wz148/image/upload/v1783631669/326_1x_shots_so_pozp2o.png',
+  },
+  {
+    id: 4,
     title: 'Corporate Feedback SaaS (Feedback Net)',
     description:
       t('projects_data.feedback.desc') ||
@@ -85,7 +103,7 @@ export const getProjects = (t: (key: string) => string) => [
     collaboration: t('projects.collab') || 'Colaboración con Angie Natalia',
   },
   {
-    id: 4,
+    id: 5,
     title: 'F1 Telemetry Dashboard (F1 Hub)',
     description:
       t('projects_data.f1_hub.desc') ||
@@ -95,12 +113,38 @@ export const getProjects = (t: (key: string) => string) => [
       'Dashboard interactivo para análisis de telemetría y resultados históricos de F1 consumiendo la API de Jolpica. Implementa una capa de backend en Node.js/Express que actúa como proxy con caché de datos en memoria para evitar el rate-limiting de la API externa, optimizando los tiempos de respuesta del cliente en un 70%.',
     tech: ['React', 'Node.js', 'Express', 'Redis / Cache', 'F1 API'],
     url: '#',
-    repo: '#',
-    repoBack: '#',
+    repo: 'https://github.com/RafaOsorio1/F1-hub',
     accent: '#00FF80',
     year: '2026',
     status: 'production',
     img: 'https://images.unsplash.com/photo-1532983330958-4b32bbe9aa00?w=800&h=450&fit=crop&auto=format',
+  },
+  {
+    id: 6,
+    title: 'Parking Management System (Web)',
+    description: t('projects_data.parking_web.desc') || 'Panel web...',
+    longDesc: t('projects_data.parking_web.long') || '...',
+    tech: ['React 19', 'Vite', 'TanStack Router', 'Tailwind CSS', 'TypeScript'],
+    url: 'https://parking-lot-system-d8490172.netlify.app/landing',
+    repo: 'https://github.com/RafaOsorio1/parking-web',
+    accent: '#F69220',
+    year: '2026',
+    status: 'production',
+    img: 'https://plus.unsplash.com/premium_photo-1661902046698-40bba703f396?fm=jpg&q=60&w=800&h=450&fit=crop',
+  },
+  {
+    id: 7,
+    title: 'Parking Management System (API)',
+    description: t('projects_data.parking_api.desc') || 'API REST...',
+    longDesc: t('projects_data.parking_api.long') || '...',
+    tech: ['Node.js', 'Express 5', 'PostgreSQL', 'Prisma', 'TypeScript'],
+    url: 'https://parking-system-2s03.onrender.com',
+    repo: 'https://github.com/RafaOsorio1/Parking-system',
+    repoBack: 'https://github.com/RafaOsorio1/Parking-system',
+    accent: '#4169E1',
+    year: '2026',
+    status: 'production',
+    img: 'https://plus.unsplash.com/premium_photo-1740363268539-cd9093c3b5d1?fm=jpg&q=60&w=800&h=450&fit=crop',
   },
 ];
 

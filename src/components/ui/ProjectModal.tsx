@@ -134,15 +134,17 @@ export function ProjectModal({ project, onClose }: { project: Project; onClose: 
                 </div>
               </div>
               <div className="flex flex-wrap gap-3 pt-1">
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-5 py-2.5 rounded text-sm font-mono font-bold transition-opacity hover:opacity-85"
-                  style={{ background: project.accent, color: '#06060E' }}
-                >
-                  <Globe size={13} /> Demo
-                </a>
+                {project.url !== '#' && (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-5 py-2.5 rounded text-sm font-mono font-bold transition-opacity hover:opacity-85"
+                    style={{ background: project.accent, color: '#06060E' }}
+                  >
+                    <Globe size={13} /> Demo
+                  </a>
+                )}
 
                 {project.repo && (
                   <a

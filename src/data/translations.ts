@@ -31,7 +31,7 @@ export const translations = {
       label: 'sobre_mí',
       title: 'Software Engineer',
       subtitle: 'Arquitectura y Escala.',
-      p1: 'Software Engineer con más de 4 años de experiencia profesional diseñando y construyendo sistemas distribuidos y arquitecturas web de alto rendimiento. Especializado en el desarrollo de APIs robustas e idempotentes en Node.js, interfaces reactivas y optimizadas en React, y despliegues cloud en Azure bajo contenedores Docker. Mi enfoque está orientado a resolver cuellos de botella de rendimiento, sincronización de datos en tiempo real y optimización de bases de datos relacionales (PostgreSQL).',
+      p1: 'Software Engineer con casi 4 años de experiencia profesional diseñando y construyendo sistemas distribuidos y arquitecturas web de alto rendimiento. Especializado en el desarrollo de APIs robustas e idempotentes en Node.js, interfaces reactivas y optimizadas en React, y despliegues cloud en Azure bajo contenedores Docker. Mi enfoque está orientado a resolver cuellos de botella de rendimiento, sincronización de datos en tiempo real y optimización de bases de datos relacionales (PostgreSQL).',
       p2: 'Fuera de la ingeniería de software, me interesa la telemetría y el análisis de datos aplicados a la Fórmula 1, el cine de ciencia ficción (especialmente el cine de Nolan y Villeneuve) y compartir tiempo con mis mascotas Roxy, Nova y Sooky.',
       stats: {
         yoe: 'Experiencia / Experience',
@@ -224,7 +224,7 @@ export const translations = {
       label: 'about_me',
       title: 'Software Engineer',
       subtitle: 'Architecture & Scale.',
-      p1: 'Software Engineer with 4+ years of professional experience designing and building distributed systems and high-performance web architectures. Specialized in developing robust, idempotent APIs with Node.js, optimized reactive interfaces in React, and cloud deployments on Azure using Docker containers. My engineering focus is centered on resolving performance bottlenecks, real-time data synchronization, and relational database query optimization (PostgreSQL).',
+      p1: 'Software Engineer with nearly 4 years of professional experience designing and building distributed systems and high-performance web architectures. Specialized in developing robust, idempotent APIs with Node.js, optimized reactive interfaces in React, and cloud deployments on Azure using Docker containers. My engineering focus is centered on resolving performance bottlenecks, real-time data synchronization, and relational database query optimization (PostgreSQL).',
       p2: 'Outside of software engineering, I am deeply interested in data telemetry and strategic analysis in Formula 1, sci-fi cinema (especially Christopher Nolan and Denis Villeneuve), and spending time with my three pets, Roxy, Nova, and Sooky.',
       stats: {
         yoe: 'Experience',

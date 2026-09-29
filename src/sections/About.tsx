@@ -24,7 +24,7 @@ export function About() {
             </div>
             <div className="grid grid-cols-2 gap-3 pt-2">
               {[
-                { label: t('about.stats.yoe'), value: '4+ Yoe' },
+                { label: t('about.stats.yoe'), value: '~4 Yoe' },
                 { label: t('about.stats.projects'), value: '15+' },
                 { label: t('about.stats.coffee'), value: '<150ms' },
                 { label: t('about.stats.games'), value: '85%+' },

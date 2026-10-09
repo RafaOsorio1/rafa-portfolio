@@ -146,6 +146,19 @@ export const getProjects = (t: (key: string) => string) => [
     status: 'production',
     img: 'https://plus.unsplash.com/premium_photo-1740363268539-cd9093c3b5d1?fm=jpg&q=60&w=800&h=450&fit=crop',
   },
+  {
+    id: 8,
+    title: 'HackerEarth AI Platform',
+    description: t('projects_data.hackerearth.desc') || 'Plataforma...',
+    longDesc: t('projects_data.hackerearth.long') || '...',
+    tech: ['Next.js', 'WebContainers', 'Monaco', 'Prisma', 'OpenAI'],
+    url: '#',
+    repo: 'https://github.com/RafaOsorio1/hackerEarth-copy',
+    accent: '#32C766',
+    year: '2026',
+    status: 'development',
+    img: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=450&fit=crop&auto=format',
+  },
 ];
 
 export const getSkills = (t: (key: string) => string) => [
